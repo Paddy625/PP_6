@@ -27,7 +27,7 @@ public class MainClass extends Thread {
 			{
 			double x = (double)(rnd.nextInt(200) - 100) / 100;
 			double y = (double)(rnd.nextInt(200) - 100) / 100;
-			if (Math.sqrt(x*x + y*y) < 1) ++good;
+			if (Math.sqrt(x*x + y*y) <= 1) ++good;
 			}
 		    piList.add(4 * (double)good / (double)samples);
 		});
